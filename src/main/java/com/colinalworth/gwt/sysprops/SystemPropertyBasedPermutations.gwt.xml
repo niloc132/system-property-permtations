@@ -1,0 +1,10 @@
+<module rename-to="sysprops">
+  <inherits name="com.google.gwt.core.Core" />
+
+  <define-property name="locale" values="en,fr,es" />
+  <property-provider name="locale">
+    return window.locale;
+  </property-provider>
+
+  <entry-point class="com.colinalworth.gwt.sysprops.client.SystemPropertyBasedPermutations" />
+</module>
